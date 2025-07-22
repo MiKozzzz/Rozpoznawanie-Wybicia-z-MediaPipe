@@ -55,13 +55,13 @@ def calculate_angle(a, b, c):
 
 
 # Model rozpoznania progu
-model = YOLO(r'C:\Milek\Programowanie\runs\detect\train2\weights\best.pt')
+model = YOLO('best.pt')
 
 # Wczytywanie MediaPipe Pose
 mp_pose = mp.solutions.pose
 pose = mp_pose.Pose(min_detection_confidence=0.7, min_tracking_confidence=0.7)
 
-video_path = r"C:\Milek\Programowanie\Rozpoznawanie_wybicia_skoczka\wybicie\4_58,2.mp4"
+video_path = "wybicie/4_58,2.mp4"
 
 cap = cv2.VideoCapture(video_path)
 if not cap.isOpened():
