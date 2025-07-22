@@ -1,0 +1,13 @@
+train: C:/Milek/Programowanie/Rozpoznawanie_wybicia_skoczka/train/images
+val: C:/Milek/Programowanie/Rozpoznawanie_wybicia_skoczka/valid/images
+test: C:/Milek/Programowanie/Rozpoznawanie_wybicia_skoczka/test/images
+
+nc: 1
+names: ['prog']
+
+roboflow:
+  workspace: skoki
+  project: skokki
+  version: 3
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/skoki/skokki/dataset/3
